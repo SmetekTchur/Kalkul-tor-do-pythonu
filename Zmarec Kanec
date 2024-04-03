@@ -1,4 +1,4 @@
-print("Čus, tady máš kalkulačku, můžes tady počítat.")
+print("Vítejte v programu kalkukačka.")
 while True:
     a = float(input("Zadej první číslo:"))
     b = float(input("Zadej druhé číslo:"))
