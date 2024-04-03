@@ -1,0 +1,25 @@
+print("Čus, tady máš kalkulačku, můžes tady počítat.")
+while True:
+    a = float(input("Zadej první číslo:"))
+    b = float(input("Zadej druhé číslo:"))
+    operace = input("Zadej operaci +, -, *, /, **,//")
+    if operace == "+":
+        print(a + b)
+    elif operace == "-":
+        print(a - b)
+    elif operace == "*":
+        print(a * b )
+    elif (a == 0 or b == 0) and operace == "/":
+        print("Fakt si chtěl teď něco dělit nulou?")
+    elif operace == "/":
+        print(a / b)
+    elif operace == "**":
+        print(a ** b)
+    elif operace == '//':
+        print(a // b) 
+    elif operace == "konec":
+        print("Dík, že si použil můj stylový kalkulátor")
+        break
+    else:
+        print("Kámo co robiš?")
+    
