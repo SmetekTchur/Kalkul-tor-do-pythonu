@@ -1,25 +1,51 @@
+def plus(a, b):
+    print(a + b)
+def minus(a, b):
+    print(a - b)
+def deleno(a, b):
+    print(a / b)
+def krat(a, b):
+    print(a * b)
+def mocnina(a, b):
+    print(a ** b)
+def odmocnina(a, b):
+    print(a // b)        
+
+
+
+
+
+
+
+
+
+
+
+
+
 print("Vítejte v programu kalkukačka.")
 while True:
     a = float(input("Zadej první číslo:"))
     b = float(input("Zadej druhé číslo:"))
     operace = input("Zadej operaci +, -, *, /, **,//")
     if operace == "+":
-        print(a + b)
+        plus(a, b)
     elif operace == "-":
-        print(a - b)
+        minus(a, b)
     elif operace == "*":
-        print(a * b )
+        krat(a * b)
     elif (a == 0 or b == 0) and operace == "/":
         print("Fakt si chtěl teď něco dělit nulou?")
     elif operace == "/":
-        print(a / b)
+        deleno(a / b)
     elif operace == "**":
-        print(a ** b)
+        mocnina(a ** b)
     elif operace == '//':
-        print(a // b) 
+        odmocnina(a // b) 
     elif operace == "konec":
         print("Dík, že si použil můj stylový kalkulátor")
         break
     else:
         print("Kámo co robiš?")
+
     
