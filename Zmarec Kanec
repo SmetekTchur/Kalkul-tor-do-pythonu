@@ -33,15 +33,15 @@ while True:
     elif operace == "-":
         minus(a, b)
     elif operace == "*":
-        krat(a * b)
+        krat(a, b)
     elif (a == 0 or b == 0) and operace == "/":
         print("Fakt si chtěl teď něco dělit nulou?")
     elif operace == "/":
-        deleno(a / b)
+        deleno(a, b)
     elif operace == "**":
-        mocnina(a ** b)
+        mocnina(a, b)
     elif operace == '//':
-        odmocnina(a // b) 
+        odmocnina(a, b) 
     elif operace == "konec":
         print("Dík, že si použil můj stylový kalkulátor")
         break
